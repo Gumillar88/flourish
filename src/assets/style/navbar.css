@@ -1,0 +1,153 @@
+.navbar {
+  position: relative;
+  z-index: 999;
+  padding: 0;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 12px 0 rgb(36 50 66 / 8%);
+  box-shadow: 0 2px 12px 0 rgb(36 50 66 / 8%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar-brand img {
+  height: 24px;
+  cursor: pointer;
+}
+
+.nav-items {
+  position: absolute;
+  right: -100%;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.9;
+  padding-top: 40px;
+}
+
+.nav-items.active {
+  overflow: hidden;
+  background-color: var(--main-blue);
+
+  right: 0;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.nav-link:hover {
+  color: #f0f0f0;
+}
+
+.nav-link {
+  color: var(--main-light);
+  font-weight: 500;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-items hr {
+  width: 94%;
+  height: 0.5px;
+  background-color: var(--main-light);
+  margin: 25px auto;
+  border-radius: 4px;
+}
+
+/* ==Humberger Menu Icon== */
+.burger_hamburger-box__3lYk7 {
+  width: 24px !important;
+}
+
+.burger_hamburger__21cuQ {
+  margin: 0;
+  padding: 0;
+}
+
+.burger_hamburger-inner__14XT2,
+.burger_hamburger-inner__14XT2:after,
+.burger_hamburger-inner__14XT2:before {
+  width: 23px !important;
+  height: 2px !important;
+  padding: 0;
+  border-radius: 0 !important;
+}
+
+.burger_hamburger-inner__14XT2:after {
+  bottom: -7px !important;
+}
+
+.burger_hamburger--spin__3aNMq.burger_is-active__3Yxiv
+  .burger_hamburger-inner__14XT2:after {
+  bottom: 0 !important;
+}
+
+.burger_hamburger--spin__3aNMq.burger_is-active__3Yxiv
+  .burger_hamburger-inner__14XT2::before {
+  top: 0 !important;
+}
+
+.burger_hamburger-inner__14XT2::before {
+  top: -7px !important;
+}
+
+/* ==End of Humberger Menu Icon== */
+
+/* ===NAVBAR RESPONSIVE=== */
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 80px;
+    transition: ease-in-out 0.3s;
+  }
+
+  .navbar-brand img {
+    max-height: 100%;
+  }
+
+  .nav-items {
+    padding: 40px 20px;
+  }
+
+  /* /* .nav-items.active {
+    display: none;
+  } */
+
+  .nav-link {
+    font-size: 3rem;
+  }
+
+  /* .nav-link.active,
+  .nav-link:hover,
+  .nav-link:active {
+    color: var(--main-blue) !important;
+  }
+
+  .nav-btn.second-button {
+    max-width: 90px;
+    font-size: 15px;
+    padding: 4px;
+  }
+
+  .navbar.scrolled {
+    height: 70px;
+    position: fixed;
+  }
+
+  .nav-items .sidebar-brand,
+  .nav-items hr {
+    display: none !important;
+  } */
+}

@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "brandon";
+  src: url("../src/assets/font/Brandon_bld.otf");
+  src: url("../src/assets/font/Brandon_blk.otf");
+  src: url("../src/assets/font/Brandon_med.otf");
+  src: url("../src/assets/font/Brandon_reg.otf");
+}
+body {
+  font-family: "brandon", sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --main-blue: #392390;
+  --second-blue: #4027a3;
+  --main-light: #ffffff;
+  --main-orange: #ff6442;
+  --second-orange: #ff7050;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+  color: var(--main-blue);
+}
+
+a {
+  transition: 0.4s ease-in-out;
+}
+
+dl,
+ol,
+ul,
+li {
+  text-decoration: none;
+  margin: 0;
+}
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.main-title {
+  font-family: "brandon";
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.description {
+  font-size: 1rem;
+  color: var(--main-blue);
+}
+
+.btn.btn-main-button {
+  background-color: var(--main-blue);
+  color: var(--main-light);
+}
+.btn.btn-second-button {
+  background-color: var(--main-orange);
+  color: var(--main-light);
+}
+.btn.btn-main-button,
+.btn.btn-second-button {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.btn.btn-main-button:active,
+.btn.btn-main-button:focus,
+.btn.btn-main-button:hover,
+.btn.btn-second-button:active,
+.btn.btn-second-button:focus,
+.btn.btn-second-button:hover {
+  outline: none;
+  box-shadow: none;
+}
+.btn.btn-main-button:hover {
+  background-color: var(--second-blue);
+  color: var(--main-light);
+}
+.btn.btn-second-button:hover {
+  background-color: var(--second-orange);
+  color: var(--main-light);
+}
+
+@media (min-width: 1024px) {
+  .main-title {
+    font-size: 35px;
+  }
+}
